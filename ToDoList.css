@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  ::placeholder{
+    text-transform: capitalize ;
+  }
+  body {
+    background-image: linear-gradient(120deg, deeppink 0% , cyan);
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Lobster', cursive;
+    color: white;
+    min-height: 100vh;
+  }
+  header {
+    font-size: 1.5rem;
+  }
+  header,
+  form {
+    min-height: 19vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  form input,
+  form button {
+    padding: 1.2rem;
+    font-size: 2rem;
+    border: 5.5px solid rgb(252, 248, 248);
+     outline-style: none;
+    background-color: lightpink;
+  }
+  form button {
+    color: #48e908;
+    background-color: lightpink;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: rgb(19, 167, 19);
+    padding : 1.2rem;
+  }
+  form button:hover {
+    background-color: #93e239;
+    color: rgb(43, 160, 39);
+  }
+  .todo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .todo-list {
+    min-width: 47%;
+    list-style:none ;
+  }
+  .todo {
+    
+    background-color: rgb(235, 206, 209);
+    color: #333;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+    border: 3px solid rgb(252, 159, 173);
+    
+  }
+  .todo li {
+    flex: 1;
+  }
+  
+  .complete-btn,
+  .trash-btn {
+    background-color: #cc7262;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+    padding: 0.6rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .complete-btn {
+    background-color: rgb(106, 201, 106);
+  }
+  .todo-item {
+    padding: 0.6rem  0.6rem;
+  }
+  .fa-trash,
+  .fa-check {
+    pointer-events: none;
+  }
+  .completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+  }
+  .fall  {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+  }
